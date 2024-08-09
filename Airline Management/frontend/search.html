@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label,
+        input,
+        select {
+            margin: 10px 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Search for Flights</h1>
+    </header>
+    <div class="container">
+        <form id="searchForm">
+            <label for="pickup">Pick-up Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" name="departureDate" required>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate">
+
+            <button type="submit">Search Flights</button>
+        </form>
+        <div id="flightResults"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Flight Booking System | <a href="index.html">Home</a> | <a href="search.html">Search Flights</a>
+            | <a href="about.html">About Us</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

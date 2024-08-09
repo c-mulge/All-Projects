@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flight Booking System</h1>
+    </header>
+    <div class="container">
+        <div class="info">
+            <p>Welcome to our Flight Booking System. We offer an easy way to book flights, check seat availability, and
+                select your preferred flight class. Enjoy seamless booking for both national and international flights
+                with real-time rates and availability.</p>
+            <p>Start your journey now!</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="search.html" class="button">Start Booking</a>
+            <a href="about.html" class="button">Learn More</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Flight Booking System | <a href="index.html">Home</a> | <a href="search.html">Search Flights</a>
+            | <a href="about.html">About Us</a></p>
+    </footer>
+</body>
+
+</html>
